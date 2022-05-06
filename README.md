@@ -19,14 +19,14 @@ Describe: It should return 5 for the price of a single Bread Purchased.
 
 Code:
 Bread testBread = new Bread(1);
-Assert.AreEqual(5, testBread.BreadPrice());
+Assert.AreEqual(5, testBread.GetBreadPrice());
 Expected Result: 5.
 
 Describe: It should return 10 for the price of two Bread Purchased.
 
 Code: 
 Bread testBread = new Bread(2);
-Assert.AreEqual(10, testBread.BreadPrice());
+Assert.AreEqual(10, testBread.GetBreadPrice());
 Expected Result: 10.
 
 Describe: It should return 10 for the price of three Bread Purchased.
@@ -52,7 +52,12 @@ Pastry testBread = new Pastry(1);
 Assert.AreEqual(typeof(Pastry), testBread.GetType());
 Expected Result: Pastry.
 
+Describe: It should return 2 for the price of a single pastry Purchased.
 
+Code:
+Pastry testBread = new Pastry(1);
+Assert.AreEqual(2, testPastry.GetPastryPrice());
+Expected Result: 2.
 
 
 ## License

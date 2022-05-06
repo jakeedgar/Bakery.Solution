@@ -36,25 +36,24 @@ namespace PierresBakery
     }
   }
 
-
-  // if (BreadAmount <= 2) 
-  // {
-  //   breadPrice = BreadAmount * 5;
-  // }
-  // else if 
-  // (BreadAmount % 3 == 0) 
-  // {
-  //   breadPrice = (BreadAmount / 3) * 10;
-  // }
-  // return breadPrice;
-
   public class Pastry 
   {
     public int PastryAmount { get; set; }
+    public int PastryPrice {get; set;}
 
     public Pastry(int pastryAmount)
     {
       PastryAmount = pastryAmount;
+      PastryPrice = 0;
+    }
+
+    public int GetPastryPrice() 
+    {
+      if (PastryAmount == 1)
+      {
+        PastryPrice += 2;
+      }
+        return PastryPrice;
     }
   }
 }
