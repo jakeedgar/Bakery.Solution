@@ -21,9 +21,10 @@ class Program
       int breadCost = newBread.GetBreadPrice();
       int pastryCost = newPastry.GetPastryPrice();
       int totalPrice = breadCost + pastryCost;
-      Console.WriteLine(totalPrice);
+      Console.WriteLine("You ordered " + newPastry.PastryAmount + " pastries and " + newBread.BreadAmount + " loaves of bread and it will cost you " + totalPrice + " dollars.");
       Console.WriteLine("Thank you for your order today.");
-      Console.WriteLine("You ordered " + newPastry.PastryAmount + " pastries and " + newBread.BreadAmount + " loaves of bread it will cost you " + totalPrice + " dollars");
+      break;
+
     }
     else if (userInput == "N")
     {
@@ -32,7 +33,10 @@ class Program
     }
     else 
     {
+      Console.WriteLine("!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
+      Console.WriteLine(" ");
       Console.WriteLine("Please select either bread or pastry.");
+      Console.WriteLine(" ");
     }
     }
   }
