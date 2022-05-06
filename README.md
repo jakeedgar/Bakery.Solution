@@ -73,6 +73,11 @@ Pastry testBread = new Pastry(3);
 Assert.AreEqual(5, testPastry.GetPastryPrice());
 Expected Result: 5.
 
+Code:
+Pastry testBread = new Pastry(6);
+Assert.AreEqual(10, testPastry.GetPastryPrice());
+Expected Result: 10.
+
 
 ## License
 

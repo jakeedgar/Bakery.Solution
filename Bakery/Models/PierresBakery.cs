@@ -18,19 +18,7 @@ namespace PierresBakery
     {
       for (int i = 1; i <= BreadAmount; i++)
       {
-        if (i % 3 == 0)
-        {
-          BreadPrice += 0;
-        }
-        else if (i % 3 == 2) 
-        {
-          BreadPrice += 5;
-        }
-        else if (i % 3 == 1)
-        {
-          BreadPrice += 5;
-        }
-
+        int incrementor = (i % 3 != 0) ? BreadPrice += 5 : BreadPrice += 0;
       }
       return BreadPrice;
     }
@@ -51,23 +39,9 @@ namespace PierresBakery
     {
       for (int i = 1; i <= PastryAmount; i++)
       {
-        if ( i % 3 == 0)
-        {
-          PastryPrice += 1;
-        }
-        else if
-        (i % 3 == 1)
-        {
-          PastryPrice += 2;
-        }
-        else if (i % 3 == 2)
-        {
-          PastryPrice += 2;
-        }
-
+        int incrementor = (i % 3 != 0) ? PastryPrice += 2 : PastryPrice += 1;
       }
-
-        return PastryPrice;
+      return PastryPrice;
     }
   }
 }
