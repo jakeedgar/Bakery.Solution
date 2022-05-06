@@ -15,11 +15,24 @@ namespace PierresBakery.Tests
   }
 
   [TestMethod]
-  public void BreadPrice_ReturnsBreadAmountOne_Int()
+  public void Bread_ReturnsBreadAmountOne_Int()
   {
     Bread testBread = new Bread(1);
     Assert.AreEqual(1, testBread.BreadAmount);
   }
+
+  [TestMethod]
+  public void BreadPrice_ReturnsPriceOfOneBread_int()
+  {
+    Assert.AreEqual(5, Bread.BreadPrice(1));
+  }
+
+  [TestMethod]
+  public void BreadPrice_ReturnsPriceOfTwoBread_int()
+  {
+    Assert.AreEqual(10, Bread.BreadPrice(2));
+  }
+
     
   }
 

@@ -11,9 +11,20 @@ Expected Result: Bread.
 Describe: It should return an integer amount of Bread according to input in the test.
 
 Code:
-Bread testBread = new Bread(1);
 Assert.AreEqual(1, testBread.BreadAmount);
 Expected Result: 1.
+
+Describe: It should return 5 for the price of a single Bread Purchased.
+
+Code: 
+Assert.AreEqual(5, Bread.BreadPrice(1));
+Expected Result: 5.
+
+Describe: It should return 5 for the price of a single Bread Purchased.
+
+Code: 
+Assert.AreEqual(10, Bread.BreadPrice(2));
+Expected Result: 10.
 
 
 

@@ -11,6 +11,16 @@ namespace PierresBakery
     {
       BreadAmount = breadAmount;
     }
+
+    public static int BreadPrice (int BreadAmount)
+    {
+      int breadPrice = 0;
+      if ((BreadAmount == 1) || (BreadAmount == 2)) 
+      {
+        breadPrice = BreadAmount * 5;
+      } 
+      return breadPrice;
+    }
   }
 
   public class Pastry 
