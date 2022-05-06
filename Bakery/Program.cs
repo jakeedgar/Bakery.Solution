@@ -24,7 +24,6 @@ class Program
       Console.WriteLine("You ordered " + newPastry.PastryAmount + " pastries and " + newBread.BreadAmount + " loaves of bread and it will cost you " + totalPrice + " dollars.");
       Console.WriteLine("Thank you for your order today.");
       break;
-
     }
     else if (userInput == "N")
     {
