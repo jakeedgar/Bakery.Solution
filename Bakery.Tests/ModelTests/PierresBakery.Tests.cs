@@ -24,19 +24,22 @@ namespace PierresBakery.Tests
   [TestMethod]
   public void BreadPrice_ReturnsPriceOfOneBread_int()
   {
-    Assert.AreEqual(5, Bread.BreadPrice(1));
+    Bread testBread = new Bread(1);
+    Assert.AreEqual(5, testBread.GetBreadPrice());
   }
 
   [TestMethod]
   public void BreadPrice_ReturnsPriceOfTwoBread_int()
   {
-    Assert.AreEqual(10, Bread.BreadPrice(2));
+    Bread testBread = new Bread(2);
+    Assert.AreEqual(10, testBread.GetBreadPrice());
   }
 
   [TestMethod]
   public void BreadPrice_ReturnsPriceOfThreeBread_int()
   {
-    Assert.AreEqual(10, Bread.BreadPrice(3));
+    Bread testBread = new Bread(3);
+    Assert.AreEqual(10, testBread.GetBreadPrice());
   }
 
     
