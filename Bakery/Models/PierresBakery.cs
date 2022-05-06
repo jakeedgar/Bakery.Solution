@@ -15,10 +15,15 @@ namespace PierresBakery
     public static int BreadPrice (int BreadAmount)
     {
       int breadPrice = 0;
-      if ((BreadAmount == 1) || (BreadAmount == 2)) 
+      if (BreadAmount <= 2) 
       {
         breadPrice = BreadAmount * 5;
-      } 
+      }
+      else if 
+      (BreadAmount % 3 == 0) 
+      {
+        breadPrice = (BreadAmount / 3) * 10;
+      }
       return breadPrice;
     }
   }

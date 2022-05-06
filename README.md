@@ -20,10 +20,16 @@ Code:
 Assert.AreEqual(5, Bread.BreadPrice(1));
 Expected Result: 5.
 
-Describe: It should return 5 for the price of a single Bread Purchased.
+Describe: It should return 10 for the price of two Bread Purchased.
 
 Code: 
 Assert.AreEqual(10, Bread.BreadPrice(2));
+Expected Result: 10.
+
+Describe: It should return 10 for the price of three Bread Purchased.
+
+Code: 
+Assert.AreEqual(10, Bread.BreadPrice(3));
 Expected Result: 10.
 
 
