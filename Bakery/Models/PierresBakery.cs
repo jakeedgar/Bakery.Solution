@@ -49,10 +49,19 @@ namespace PierresBakery
 
     public int GetPastryPrice() 
     {
-      if (PastryAmount == 1)
+      for (int i = 1; i <= PastryAmount; i++)
       {
-        PastryPrice += 2;
+        if (i == 1)
+        {
+          PastryPrice += 2;
+        }
+        else if (i % 2 == 0)
+        {
+          PastryPrice += 2;
+        }
+
       }
+
         return PastryPrice;
     }
   }

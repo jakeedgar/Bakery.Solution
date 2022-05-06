@@ -59,6 +59,13 @@ Pastry testBread = new Pastry(1);
 Assert.AreEqual(2, testPastry.GetPastryPrice());
 Expected Result: 2.
 
+Describe: It should return 4 for the price of two pastries Purchased.
+
+Code:
+Pastry testBread = new Pastry(2);
+Assert.AreEqual(4, testPastry.GetPastryPrice());
+Expected Result: 4.
+
 
 ## License
 
