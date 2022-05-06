@@ -51,11 +51,16 @@ namespace PierresBakery
     {
       for (int i = 1; i <= PastryAmount; i++)
       {
-        if (i == 1)
+        if ( i % 3 == 0)
+        {
+          PastryPrice += 1;
+        }
+        else if
+        (i % 3 == 1)
         {
           PastryPrice += 2;
         }
-        else if (i % 2 == 0)
+        else if (i % 3 == 2)
         {
           PastryPrice += 2;
         }
