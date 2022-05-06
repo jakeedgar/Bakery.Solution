@@ -23,18 +23,15 @@ namespace PierresBakery
       return BreadPrice;
     }
   }
-
   public class Pastry 
   {
     public int PastryAmount { get; set; }
     public int PastryPrice {get; set;}
-
     public Pastry(int pastryAmount)
     {
       PastryAmount = pastryAmount;
       PastryPrice = 0;
     }
-
     public int GetPastryPrice() 
     {
       for (int i = 1; i <= PastryAmount; i++)
