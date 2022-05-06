@@ -16,17 +16,21 @@ namespace PierresBakery
 
     public int GetBreadPrice ()
     {
-      for (int i = 0; i <= BreadAmount; i++)
+      for (int i = 1; i <= BreadAmount; i++)
       {
-        if (BreadAmount <= 2) 
+        if (i % 3 == 0)
         {
-          BreadPrice = BreadAmount * 5;
+          BreadPrice += 0;
         }
-        else if (BreadAmount % 3 == 0)
+        else if (i % 3 == 2) 
         {
-          BreadPrice = BreadAmount / 3 * 10;
+          BreadPrice += 5;
         }
-        
+        else if (i % 3 == 1)
+        {
+          BreadPrice += 5;
+        }
+
       }
       return BreadPrice;
     }
